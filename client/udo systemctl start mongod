@@ -1,0 +1,11 @@
+● mongod.service - MongoDB Database Server
+     Loaded: loaded (/lib/systemd/system/mongod.service; enabled; vendor preset: enabled)
+     Active: inactive (dead) since Thu 2021-08-19 02:23:49 UTC; 35min ago
+       Docs: https://docs.mongodb.org/manual
+    Process: 102347 ExecStart=/usr/bin/mongod --config /etc/mongod.conf (code=exited, status=0/SUCCESS)
+   Main PID: 102347 (code=exited, status=0/SUCCESS)
+
+Aug 19 02:23:27 ubuntu-s-1vcpu-1gb-sfo3-01 systemd[1]: Started MongoDB Database Server.
+Aug 19 02:23:49 ubuntu-s-1vcpu-1gb-sfo3-01 systemd[1]: Stopping MongoDB Database Server...
+Aug 19 02:23:49 ubuntu-s-1vcpu-1gb-sfo3-01 systemd[1]: mongod.service: Succeeded.
+Aug 19 02:23:49 ubuntu-s-1vcpu-1gb-sfo3-01 systemd[1]: Stopped MongoDB Database Server.
