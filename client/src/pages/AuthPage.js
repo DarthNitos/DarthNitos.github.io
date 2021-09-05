@@ -48,13 +48,15 @@ export const AuthPage = () => {
 
   return (
     <div className="row">
-      <div className="col s6 offset-s3">
+      <div className="col s6 offset-s3 auth-main">
         <h1 className="purple-text text-lighten-4">Linkio</h1>
-        <div className="card purple lighten-5">
+        <div className="card purple lighten-5 auth-card">
           <div className="card-content black-text">
             <span className="card-title">Authentication</span>
             <div>
               <div className="input-field">
+                <label htmlFor="email">Email</label>
+                <br />
                 <input
                   placeholder="Enter your Email"
                   id="email"
@@ -63,10 +65,11 @@ export const AuthPage = () => {
                   value={form.email}
                   onChange={changeHandler}
                 />
-                <label htmlFor="email">Email</label>
               </div>
 
               <div className="input-field">
+                <label htmlFor="password">Password</label>
+                <br />
                 <input
                   placeholder="Enter your password"
                   id="password"
@@ -75,7 +78,6 @@ export const AuthPage = () => {
                   value={form.password}
                   onChange={changeHandler}
                 />
-                <label htmlFor="password">Password</label>
               </div>
             </div>
           </div>

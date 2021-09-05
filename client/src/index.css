@@ -37,3 +37,74 @@ body {
 .text-center {
   text-align: center;
 }
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  .auth-main {
+    width: 100% !important;
+    padding: 0 !important;
+    margin: auto !important;
+    text-align: center;
+  }
+
+  .auth-main h1 {
+    font-size: 8rem;
+  }
+
+  .auth-card {
+    margin: 0;
+  }
+
+  .card-title {
+    font-size: 5rem !important;
+    margin-bottom: 5rem !important;
+  }
+
+  .input-field label {
+    clear: both;
+    font-size: 3rem;
+    /* margin-bottom: 5rem !important; */
+  }
+
+  .card-action button {
+    font-size: 1.65rem;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .auth-main {
+    width: 100% !important;
+    padding: 0 !important;
+    margin: auto !important;
+    text-align: center;
+  }
+
+  .auth-card {
+    margin: 0;
+  }
+
+  .card-title {
+    font-size: 48px !important;
+  }
+
+  .input-field label {
+    font-size: 24px;
+  }
+
+  .card-action button {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .auth-main {
+    width: 100% !important;
+    padding: 0 !important;
+    margin: auto !important;
+    text-align: center;
+  }
+
+  .auth-card {
+    width: 90vw;
+    margin: 0;
+  }
+}
