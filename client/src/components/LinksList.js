@@ -7,7 +7,7 @@ export const LinksList = ({ links }) => {
   }
 
   return (
-    <div className="row margin-top">
+    <div className="row mt-2">
       {links.map((link, index) => {
         return (
           <div className="col s6" key={link._id}>

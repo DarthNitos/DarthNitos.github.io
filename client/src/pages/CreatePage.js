@@ -32,8 +32,8 @@ export const CreatePage = () => {
   };
 
   return (
-    <div className="row link-input">
-      <div className="col s8 offset-s2 padding-top-2">
+    <div className="row mt-2">
+      <div className="col s8 offset-s2">
         <div className="input-field">
           <label htmlFor="link">Paste your link here and press Enter</label>
           <input
