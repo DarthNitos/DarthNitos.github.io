@@ -1,9 +1,11 @@
-import React, { useContext } from "react";
+import React, { useState, useEffect, useRef, useContext } from "react";
 import { NavLink, useHistory } from "react-router-dom";
 import { AuthContext } from "../context/AuthContext";
-import "../index.css";
+import "../css/main.css";
 
 export const Navbar = () => {
+  const [isShown, setIsShown] = useState(false);
+  const menuBtnRef = useRef(null);
   const history = useHistory();
   const auth = useContext(AuthContext);
 
@@ -12,6 +14,16 @@ export const Navbar = () => {
 
     auth.logout();
     history.push("/");
+  };
+
+  useEffect(() => {
+    if (isShown) return menuBtnRef.current.classList.add("close");
+
+    return menuBtnRef.current.classList.remove("close");
+  }, [isShown]);
+
+  const setDisplay = {
+    display: isShown ? "block" : "none",
   };
 
   return (
@@ -37,13 +49,17 @@ export const Navbar = () => {
         </div>
       </nav>
 
-      <div className="menu-btn">
+      <div
+        className="menu-btn"
+        ref={menuBtnRef}
+        onClick={() => setIsShown((prev) => !prev)}
+      >
         <div className="btn-line"></div>
         <div className="btn-line"></div>
         <div className="btn-line"></div>
       </div>
 
-      <nav className="menu">
+      <nav className="menu" style={setDisplay}>
         <div className="menu-branding">
           <div className="logo">Linkio</div>
         </div>
