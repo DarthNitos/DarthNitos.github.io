@@ -8,8 +8,17 @@ body {
   background-position-y: center;
 }
 
+header {
+  position: absolute;
+  width: 100%;
+}
+
 .navbar {
   padding: 0 2rem;
+}
+
+.link-input {
+  padding-top: 20vh;
 }
 
 .padding-top-2 {
@@ -36,6 +45,16 @@ body {
 
 .text-center {
   text-align: center;
+}
+
+@media screen and (min-width: 1170px) {
+  .menu-btn {
+    display: none;
+  }
+
+  .menu {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
@@ -70,6 +89,12 @@ body {
   }
 }
 
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  .navbar {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 769px) {
   .auth-main {
     width: 100% !important;
@@ -93,6 +118,10 @@ body {
   .card-action button {
     font-size: 18px;
   }
+
+  .navbar {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -106,5 +135,9 @@ body {
   .auth-card {
     width: 90vw;
     margin: 0;
+  }
+
+  .navbar {
+    display: none;
   }
 }

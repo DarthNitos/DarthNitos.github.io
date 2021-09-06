@@ -10,7 +10,7 @@
     "client:install": "npm install --prefix client",
     "client:build": "npm run build --prefix client",
     "dev": "cross-env NODE_ENV=development concurrently \"npm run server\" \"npm run client\"",
-    "sass": "node-sass -w scss/ -o public/css/ --recursive"
+    "sass": "node-sass -w client/src/scss/ -o client/src/css/ --recursive"
   },
   "keywords": [
     "mern",
@@ -28,6 +28,7 @@
     "express-validator": "^6.12.1",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.13.7",
+    "node-sass": "^6.0.1",
     "shortid": "^2.2.16"
   },
   "devDependencies": {

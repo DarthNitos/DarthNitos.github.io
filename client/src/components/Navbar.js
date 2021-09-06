@@ -15,13 +15,40 @@ export const Navbar = () => {
   };
 
   return (
-    <nav className="purple lighten-4">
-      <div className="navbar nav-wrapper">
-        <NavLink to="/">
-          <span className="brand-logo">Linkio</span>
-        </NavLink>
-        <ul id="nav-mobile" className="right hide-on-med-and-down">
-          <li>
+    <header>
+      <nav className="navbar purple lighten-4">
+        <div className="navbar nav-wrapper">
+          <NavLink to="/">
+            <span className="brand-logo">Linkio</span>
+          </NavLink>
+          <ul id="nav-mobile" className="right hide-on-med-and-down">
+            <li>
+              <NavLink to="/create">Create</NavLink>
+            </li>
+            <li>
+              <NavLink to="/links">My Links</NavLink>
+            </li>
+            <li>
+              <a href="/" onClick={logoutHandler}>
+                Logout
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div className="menu-btn">
+        <div className="btn-line"></div>
+        <div className="btn-line"></div>
+        <div className="btn-line"></div>
+      </div>
+
+      <nav className="menu">
+        <div className="menu-branding">
+          <div className="logo">Linkio</div>
+        </div>
+        <ul className="menu-nav">
+          <li className="nav-item">
             <NavLink to="/create">Create</NavLink>
           </li>
           <li>
@@ -33,7 +60,7 @@ export const Navbar = () => {
             </a>
           </li>
         </ul>
-      </div>
-    </nav>
+      </nav>
+    </header>
   );
 };
