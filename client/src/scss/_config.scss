@@ -1,4 +1,6 @@
-$spacer: 1rem;
+$primary-color: #333;
+$secondary-color: #ce93d8;
+$logo-image: url(../imgs/logo.png);
 
 @mixin easeOut {
   transition: all 1s ease-out;

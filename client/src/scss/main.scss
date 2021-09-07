@@ -132,7 +132,12 @@ header {
     margin: 0;
   }
 
-  /* .navbar {
+  nav {
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .navbar {
     display: none;
-  } */
+  }
 }
