@@ -20,13 +20,13 @@ $logo-image: url(../imgs/logo.png);
 }
 
 @mixin mediaLg {
-  @media screen and (min-width: 769px) and (max-width: 1170px) {
+  @media screen and (min-width: 769px) and (max-width: 991px) {
     @content;
   }
 }
 
 @mixin mediaXl {
-  @media screen and (min-width: 1171px) {
+  @media screen and (min-width: 992px) {
     @content;
   }
 }

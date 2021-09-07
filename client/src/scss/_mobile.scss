@@ -1,0 +1,104 @@
+// Widescreens
+@include mediaXl {
+  .menu-btn {
+    display: none;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .label-input {
+    font-size: 20px;
+  }
+}
+
+// Desktops & Laptops
+@include mediaLg {
+  .auth-main {
+    width: 100% !important;
+    padding: 0 !important;
+    margin: auto !important;
+    text-align: center;
+  }
+
+  .auth-main h1 {
+    font-size: 8rem;
+  }
+
+  .auth-card {
+    margin: 0;
+  }
+
+  .card-title {
+    font-size: 5rem !important;
+    margin-bottom: 5rem !important;
+  }
+
+  .input-field label {
+    clear: both;
+    font-size: 3rem;
+  }
+
+  .card-action button {
+    font-size: 1.65rem;
+  }
+
+  .label-input {
+    font-size: 20px;
+  }
+}
+
+// Tablets & Small Laptops
+@include mediaMd {
+  .auth-main {
+    width: 100% !important;
+    padding: 0 !important;
+    margin: auto !important;
+    text-align: center;
+  }
+
+  .auth-card {
+    margin: 0;
+  }
+
+  .card-title {
+    font-size: 48px !important;
+  }
+
+  .input-field label {
+    font-size: 24px;
+  }
+
+  .card-action button {
+    font-size: 18px;
+  }
+
+  nav {
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .label-input {
+    font-size: 15px;
+  }
+}
+
+// Smartphones
+@include mediaSm {
+  .auth-main {
+    width: 100% !important;
+    padding: 0 !important;
+    margin: auto !important;
+    text-align: center;
+  }
+
+  .auth-card {
+    width: 90vw;
+    margin: 0;
+  }
+
+  .label-input {
+    font-size: 15px;
+  }
+}

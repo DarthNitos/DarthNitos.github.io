@@ -2,7 +2,7 @@ import React from "react";
 
 export const LinkCard = ({ link }) => {
   return (
-    <div className="row margin-top">
+    <div className="row mt-2">
       <div className="col s6 offset-s3" key={link._id}>
         <div className="card purple lighten-5">
           <div className="card-content text-center">

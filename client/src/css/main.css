@@ -2,8 +2,8 @@
 .menu-btn {
   position: absolute;
   z-index: 3;
-  right: 35px;
-  top: 35px;
+  top: 25px;
+  left: 35px;
   cursor: pointer;
   transition: all 1s ease-out; }
   .menu-btn .btn-line {
@@ -77,6 +77,67 @@
     .menu .nav-link:hover {
       color: #ce93d8; }
 
+@media screen and (min-width: 992px) {
+  .menu-btn {
+    display: none; }
+  .menu {
+    display: none; }
+  .label-input {
+    font-size: 20px; } }
+
+@media screen and (min-width: 769px) and (max-width: 991px) {
+  .auth-main {
+    width: 100% !important;
+    padding: 0 !important;
+    margin: auto !important;
+    text-align: center; }
+  .auth-main h1 {
+    font-size: 8rem; }
+  .auth-card {
+    margin: 0; }
+  .card-title {
+    font-size: 5rem !important;
+    margin-bottom: 5rem !important; }
+  .input-field label {
+    clear: both;
+    font-size: 3rem; }
+  .card-action button {
+    font-size: 1.65rem; }
+  .label-input {
+    font-size: 20px; } }
+
+@media screen and (max-width: 768px) {
+  .auth-main {
+    width: 100% !important;
+    padding: 0 !important;
+    margin: auto !important;
+    text-align: center; }
+  .auth-card {
+    margin: 0; }
+  .card-title {
+    font-size: 48px !important; }
+  .input-field label {
+    font-size: 24px; }
+  .card-action button {
+    font-size: 18px; }
+  nav {
+    background-color: transparent;
+    box-shadow: none; }
+  .label-input {
+    font-size: 15px; } }
+
+@media screen and (max-width: 500px) {
+  .auth-main {
+    width: 100% !important;
+    padding: 0 !important;
+    margin: auto !important;
+    text-align: center; }
+  .auth-card {
+    width: 90vw;
+    margin: 0; }
+  .label-input {
+    font-size: 15px; } }
+
 body {
   height: 100vh;
   background: url(../imgs/sunset.jpg);
@@ -106,69 +167,3 @@ header {
 
 .text-center {
   text-align: center; }
-
-@media screen and (min-width: 1170px) {
-  /* .menu-btn {
-    display: none;
-  }
-
-  .menu {
-    display: none;
-  } */ }
-
-@media screen and (min-width: 769px) and (max-width: 1170px) {
-  .auth-main {
-    width: 100% !important;
-    padding: 0 !important;
-    margin: auto !important;
-    text-align: center; }
-  .auth-main h1 {
-    font-size: 8rem; }
-  .auth-card {
-    margin: 0; }
-  .card-title {
-    font-size: 5rem !important;
-    margin-bottom: 5rem !important; }
-  .input-field label {
-    clear: both;
-    font-size: 3rem; }
-  .card-action button {
-    font-size: 1.65rem; } }
-
-@media screen and (min-width: 769px) and (max-width: 1170px) {
-  /* .navbar {
-    display: none;
-  } */ }
-
-@media screen and (max-width: 769px) {
-  .auth-main {
-    width: 100% !important;
-    padding: 0 !important;
-    margin: auto !important;
-    text-align: center; }
-  .auth-card {
-    margin: 0; }
-  .card-title {
-    font-size: 48px !important; }
-  .input-field label {
-    font-size: 24px; }
-  .card-action button {
-    font-size: 18px; }
-  /* .navbar {
-    display: none;
-  } */ }
-
-@media screen and (max-width: 500px) {
-  .auth-main {
-    width: 100% !important;
-    padding: 0 !important;
-    margin: auto !important;
-    text-align: center; }
-  .auth-card {
-    width: 90vw;
-    margin: 0; }
-  nav {
-    background-color: transparent;
-    box-shadow: none; }
-  .navbar {
-    display: none; } }
