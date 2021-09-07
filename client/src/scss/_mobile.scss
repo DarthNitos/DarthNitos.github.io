@@ -35,11 +35,6 @@
     margin-bottom: 5rem !important;
   }
 
-  .input-field label {
-    clear: both;
-    font-size: 3rem;
-  }
-
   .card-action button {
     font-size: 1.65rem;
   }
@@ -66,10 +61,6 @@
     font-size: 48px !important;
   }
 
-  .input-field label {
-    font-size: 24px;
-  }
-
   .card-action button {
     font-size: 18px;
   }
@@ -81,6 +72,37 @@
 
   .label-input {
     font-size: 15px;
+  }
+
+  ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0;
+
+    &.show {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 24px;
+  }
+
+  .menu-branding {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0);
+
+    .logo {
+      width: 120px;
+      height: 120px;
+      background: $logo-image;
+      border-radius: 30%;
+      background-size: cover;
+      border: 2px solid $secondary-color;
+    }
   }
 }
 
