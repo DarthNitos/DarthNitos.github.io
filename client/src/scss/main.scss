@@ -43,3 +43,9 @@ header {
 .text-center {
   text-align: center;
 }
+
+.card-content p {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
